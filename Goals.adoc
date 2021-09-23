@@ -30,7 +30,7 @@ toc::[]
 //---- Requirement
 [[g1-mainGoal]]
 `{counter:g1}`
-The main purpose of the {companion} is to complement the  {Handbook} by providing useful additional material, examples, templates, and full {method} use cases.
+Ipse Lorem
 //---- 
 
 
@@ -39,14 +39,15 @@ The main purpose of the {companion} is to complement the  {Handbook} by providin
 //---- Requirement
 [[g2-current]]
 `{counter:g2}`
-The only available material is the current status of the {Handbook}.
+Ipse Lorem
 
 === G.3 Expected benefits 
 
 //---- Requirement
 [[g3-templates]]
 `{counter:g3}`
-<<readerC, Readers>> of the {companion} should be able to find some templates for the requirements' book structure.
+<<bob, Bob>> Ipse Lorem
+
 
 {check} {companionURL}[Corresponding Artifact]
 //---- 
@@ -56,10 +57,8 @@ The only available material is the current status of the {Handbook}.
 //---- Requirement
 [[g4-system]]
 `{counter:g3}`
-The _system_ under development in this specification is an unusual one: a book!
-It will serve as a companion for the {Handbook}.
+Ipse Lorem
 
-{check} {companionURL}/#_book_templates[Corresponding Artifact]
 //---- 
 
 === G.5 High-level usage scenarios 
@@ -96,8 +95,6 @@ Here is a non-exhaustive list of the stakeholders.
 | Author of the Companion Book | Project Manager | {jmb}, author and effort leader of the {companion}
 |===
 //----------------------------------------------
-
-Most of the requirements come from the {Handbook}.
 
 .Back matter
 [TIP]

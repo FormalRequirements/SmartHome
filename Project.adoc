@@ -39,11 +39,8 @@ Here are the roles for the production of the {companion}:
 //---- Requirement
 [[p2-persons]]
 `{counter:project}`
-Here are the identified people involved in the development of the {companion}:
+Ipse Lorem
 
-- Leader: The writing effort of the {companion} is under the responsibility of {jmb}.
-- Writers: In addition to {jmb}, here are the persons involved: {se}, {mn}, {an}, {fg}
-- Reviewers: In addition to {bm}, author of {Handbook}, some reviewers will be found among early adopters of {Handbook}.
 
 //---- TBD: To Be Determined
 .TBD
@@ -65,14 +62,9 @@ Needs::
 === P.3 Imposed technical choices
 
 //---- Requirement
-[[p3-English]]
-`{counter:project}`
-The {companion} should be written in English.
-
-//---- Requirement
 [[p3-Springer]]
 `{counter:project}`
-The {companion} should be written in one of the compatible inputs of the publisher, Springer.
+Ipse Lorem
 
 {missing} [Corresponding Artifact]
 
@@ -81,14 +73,14 @@ The {companion} should be written in one of the compatible inputs of the publish
 //---- Requirement
 [[p4-date]]
 `{counter:project}`
-The expected date of the {companion} is the end of June.
+Ipse Lorem
 
 === P.5 Tasks and deliverables
 
 //---- Requirement
 [[p4-repo]]
 `{counter:project}`
-The tasks are managed through the use of a collaborative repository: {companionGit}. 
+Ipse Lorem
 
 === P.6 Risk and mitigation analysis
 

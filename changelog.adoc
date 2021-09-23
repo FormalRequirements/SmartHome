@@ -5,11 +5,7 @@
 |===
 | Version | Date | Comment 
 //----------------------------------------------
-| 1.0   | 2021-02-01 | Initial draft by {jmb}
-| 1.1   | 2021-02-08 | Organization in separate books' files, by {jmb}
-| 1.2   | 2021-02-21 | Writing of the Process book, by {jmb}
-| 1.2.1 | 2021-02-29 | Minor improvements of verification rules, by {jmb}
-| 1.2.2 | 2021-04-16 | Minor improvements of goals, by {jmb}
+| 1.0   | 2021-09-23 | Initial draft by {jmb}
 | _{version}_ | _{localdate}_ | _Current PDF version, by {jmb}_
 |=== 
 //----------------------------------------------
