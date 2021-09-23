@@ -1,0 +1,112 @@
+//------------------------------------
+// GOALS book
+//
+// Template for requirement:
+//---- Requirement
+//[[gx-keyword]] 
+//`{counter:gx}`
+// Requirement
+
+// {missing} [Corresponding Artifact]
+//---- 
+//------------------------------------
+:toc: macro
+
+== Goals
+
+.Front matter
+[TIP]
+====
+// Title (whether or not on a separate title page).
+// Date of current publication and revision history.
+// Table of contents and any other appropriate tables, such as a table of illustrations. (But not the glossary, which is part of the contents, as section E.1.)
+toc::[] 
+// Copyright notice, distribution information, restrictions on distribution.
+// Approval information. 
+====
+
+=== G.1 Overall context and goals
+
+//---- Requirement
+[[g1-mainGoal]]
+`{counter:g1}`
+The main purpose of the {companion} is to complement the  {Handbook} by providing useful additional material, examples, templates, and full {method} use cases.
+//---- 
+
+
+=== G.2 Current situation
+
+//---- Requirement
+[[g2-current]]
+`{counter:g2}`
+The only available material is the current status of the {Handbook}.
+
+=== G.3 Expected benefits 
+
+//---- Requirement
+[[g3-templates]]
+`{counter:g3}`
+<<readerC, Readers>> of the {companion} should be able to find some templates for the requirements' book structure.
+
+{check} {companionURL}[Corresponding Artifact]
+//---- 
+
+=== G.4 Functionality overview
+
+//---- Requirement
+[[g4-system]]
+`{counter:g3}`
+The _system_ under development in this specification is an unusual one: a book!
+It will serve as a companion for the {Handbook}.
+
+{check} {companionURL}/#_book_templates[Corresponding Artifact]
+//---- 
+
+=== G.5 High-level usage scenarios 
+
+{emptysec}
+
+=== G.6 Limitations and exclusions 
+
+{emptysec}
+
+=== G.7 Stakeholders and requirements sources
+
+Here is a non-exhaustive list of the stakeholders.
+
+//----------------------------------------------
+.Target side stakeholders
+[cols="1,1,3",,options="header"]
+|===
+| Stakeholder | Category | Comment 
+//----------------------------------------------
+| Springer | Legal department | In charge of the edition of the {companion}
+| Readers of the {Handbook} | User | Readers of the main {Handbook} that might need additional information about the method
+| [[readerC]]Readers of the {companion} | User | Person reading the {companion} who might not have access to the main {Handbook}
+|=== 
+//----------------------------------------------
+
+//----------------------------------------------
+.Production side stakeholders
+[cols="1,1,3",,options="header"]
+|===
+| Stakeholder    | Category | Comment 
+//----------------------------------------------
+| Author of the Handbook | Domain Expert | Bertrand Meyer, author of the {Handbook}, and main evaluator of the {companion}
+| Author of the Companion Book | Project Manager | {jmb}, author and effort leader of the {companion}
+|===
+//----------------------------------------------
+
+Most of the requirements come from the {Handbook}.
+
+.Back matter
+[TIP]
+====
+// Title (whether or not on a separate title page).
+// Date of current publication and revision history.
+// Table of contents and any other appropriate tables, such as a table of illustrations. (But not the
+// glossary, which is part of the contents, as section E.1.)
+// Copyright notice, distribution information, restrictions on distribution.
+// Approval information. 
+TBD list:: <<p1-persons>>.
+====

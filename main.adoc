@@ -1,0 +1,61 @@
+:title: Companion Requirements
+:project: Project
+:version: 1.2.1
+:author: J.-M. Bruel
+:email: bruel@irit.fr
+:organization: IRIT/CNRS - University of Toulouse, France
+:icons: font
+//--------------------------- PDF version
+:doctype: book
+:title-page-background-image: image::pegs.svg[pdfwidth=60%]
+// :title-logo-image: image::pegs.svg[top=1%, align=left, pdfwidth=2.5in]
+:back-cover-image: image::pegs.svg[pdfwidth=160%]
+:method: pass:[<b>PEGS</b>]
+ifdef::pdf-backend[]
+:method: PEGS
+endif::[]
+
+= {title}
+{author},{email}
+{version} -- {localdate}
+
+//--------------------------- Glossary & Definitions
+// URLS
+:companionURL: https://formalrequirements.github.io/requirements-handbook-companion
+:HandbookPDF: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
+:companionGit: https://github.com/FormalRequirements/requirements-handbook
+:emptysec: icon:warning[] Nothing available at this point.
+// ICONS
+:check: icon:check-circle[]
+:bug: icon:bug[]
+:missing: icon:times-circle[]
+// GLOSSARY ENTRIES
+:companion: <<companion, Companion Book>>
+:Handbook:  <<Handbook, Handbook>>
+// PERSONS ENTRIES
+:an: Alexandr Naumchev
+:bm: Bertrand Meyer
+:fg: Florian Galinier
+:jmb: https://jmbruel.netlify.app[J.-M. Bruel]
+:mn: Marya Naumchev
+:se: Sophie Ebersold
+
+
+[NOTE]
+====
+This document constitutes the requirements book of the {companionURL}[Requirements Handbook Companion].
+It follows the method presented in the {HandbookPDF}[Handbook of requirements and business analysis].
+It uses the Asciidoc template available {companionGit}/blob/issue-14-Write_an_Asciidoc_template_for_PEGS/templates/asciidoc/book.adoc[here].
+====
+
+include::changelog.adoc[]
+
+include::Goals.adoc[]
+
+include::Environment.adoc[]
+
+include::Project.adoc[]
+
+include::System.adoc[]
+
+
