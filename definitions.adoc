@@ -29,3 +29,8 @@ endif::[]
 
 // TRICKS
 :emptysec: icon:warning[] Nothing available at this point.
+:toc: macro
+
+// Requirements
+:smartHome: <<smartHome,Smart Home>>
+:system: {smartHome}

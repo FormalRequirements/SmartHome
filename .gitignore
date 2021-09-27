@@ -6,3 +6,4 @@ pom.xml
 .settings
 main.html
 .DS_Store
+.vscode

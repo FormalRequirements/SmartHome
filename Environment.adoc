@@ -19,8 +19,8 @@ It also lists the icons used in this document.
 [[e1-terms]]
 ==== `{counter:e1}` Terms
 
-[[Bob]]
-{Bob}:: Ipse Lorem.
+[[smartHome]]
+Smart Home:: The system under development...
 
 ==== `{counter:e1}` Icons
 
