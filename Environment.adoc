@@ -8,19 +8,37 @@
 
 // {missing} [Corresponding Artifact]
 //------------------------------------
+
+ifndef::part[]
+include::definitions.adoc[]
+endif::[]
+
+.Front matter
+[TIP]
+====
+// Title (whether or not on a separate title page).
+// Date of current publication and revision history.
+// Table of contents and any other appropriate tables, such as a table of illustrations. (But not the glossary, which is part of the contents, as section E.1.)
+toc::[] 
+// Copyright notice, distribution information, restrictions on distribution.
+// Approval information. 
+====
+
 == Environment
 
 === E.1 Glossary
 
 This section defines the domain-specific terms used in this document.
-
 It also lists the icons used in this document.
 
 [[e1-terms]]
 ==== `{counter:e1}` Terms
 
 [[smartHome]]
-Smart Home:: The system under development...
+{smartHome}:: The system under development: a home featuring a broad range of automated services to make it, e.g., more convenient, safer, or less costly to live in.
+
+[[inhabitants]]
+{Inhabitants}:: person living in a {smartHome}.
 
 ==== `{counter:e1}` Icons
 
@@ -58,3 +76,5 @@ Ipse Lorem
 === E.6 Invariants
 
 {emptysec}
+
+

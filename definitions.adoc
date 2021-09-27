@@ -18,6 +18,9 @@
 ifdef::pdf-backend[]
 :method: PEGS
 endif::[]
+:smartHome: <<smartHome,Smart Home>>
+:inhabitants: <<inhabitants,Inhabitants>>
+//:: <<>>
 
 // PERSONS ENTRIES
 :an: Alexandr Naumchev

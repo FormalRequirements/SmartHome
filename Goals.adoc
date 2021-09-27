@@ -50,7 +50,7 @@ Ipse Lorem
 //---- Requirement
 [[g3-templates]]
 `{counter:g3}`
-<<bob, Bob>> Ipse Lorem
+<<bob, Bob>> Ipse Loren
 
 
 {check} {companionURL}[Corresponding Artifact]
@@ -59,11 +59,21 @@ Ipse Lorem
 === G.4 Functionality overview
 
 //---- Requirement
-[[g4-system]]
-`{counter:g3}`
-Ipse Lorem
-
+[[g4-phys-intrusion]]
+`{counter:g4}`
+The {SmartHome} must support prevention and detection of unauthorized physical intrusion.
 //---- 
+
+//---- Requirement
+[[g4-comp-intrusion]]
+`{counter:g4}`
+The {SmartHome} must support prevention and detection of unauthorized computer intrusion.
+//---- 
+
+//---- Requirement
+[[g4-comp-intrusion]]
+`{counter:g4}`
+The {SmartHome} must provide an identification-based access control system.
 
 === G.5 High-level usage scenarios 
 

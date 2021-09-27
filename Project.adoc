@@ -77,10 +77,7 @@ Ipse Lorem
 
 === P.5 Tasks and deliverables
 
-//---- Requirement
-[[p4-repo]]
-`{counter:project}`
-Ipse Lorem
+{emptysec}
 
 === P.6 Risk and mitigation analysis
 
@@ -88,7 +85,7 @@ Ipse Lorem
 
 === P.7 Requirements process and report
 
-The production of the {companion} will not follow a particular requirements process. 
+{emptysec}
 
 .Back matter
 [TIP]
