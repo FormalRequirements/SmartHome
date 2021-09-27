@@ -95,7 +95,7 @@ Here is a non-exhaustive list of the stakeholders.
 |===
 | Stakeholder    | Category | Comment 
 //----------------------------------------------
-| System Admin | Tec. department | ...
+| System Admin | Technical department | ...
 |===
 //----------------------------------------------
 
