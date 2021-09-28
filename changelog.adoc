@@ -5,7 +5,8 @@
 |===
 | Version | Date | Comment 
 //----------------------------------------------
-| 1.0   | 2021-09-23 | Initial draft by {jmb}
-| _{version}_ | _{localdate}_ | _Current PDF version, by {jmb}_
+| 1.0           | 2021-09-23 | Initial draft by {jmb}
+| {version}     | 2021-09-27 | Stackeholders' initial definition by {jmb}
+| _{version}_   | _{localdate}_ | _Current PDF version, by {jmb}_
 |=== 
 //----------------------------------------------

@@ -30,15 +30,13 @@ toc::[]
 
 This section defines the domain-specific terms used in this document.
 It also lists the icons used in this document.
+For stakeholders definitions, see <<stakeholders>>.
 
 [[e1-terms]]
 ==== `{counter:e1}` Terms
 
 [[smartHome]]
 {smartHome}:: The system under development: a home featuring a broad range of automated services to make it, e.g., more convenient, safer, or less costly to live in.
-
-[[inhabitants]]
-{Inhabitants}:: person living in a {smartHome}.
 
 ==== `{counter:e1}` Icons
 

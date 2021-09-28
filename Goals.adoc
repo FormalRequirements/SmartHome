@@ -31,30 +31,15 @@ toc::[]
 
 === G.1 Overall context and goals
 
-//---- Requirement
-[[g1-mainGoal]]
-`{counter:g1}`
-Ipse Lorem
-//---- 
-
+{emptysec}
 
 === G.2 Current situation
 
-//---- Requirement
-[[g2-current]]
-`{counter:g2}`
-Ipse Lorem
+{emptysec}
 
 === G.3 Expected benefits 
 
-//---- Requirement
-[[g3-templates]]
-`{counter:g3}`
-<<bob, Bob>> Ipse Loren
-
-
-{check} {companionURL}[Corresponding Artifact]
-//---- 
+{emptysec}
 
 === G.4 Functionality overview
 
@@ -71,9 +56,10 @@ The {SmartHome} must support prevention and detection of unauthorized computer i
 //---- 
 
 //---- Requirement
-[[g4-comp-intrusion]]
+[[g4-id-access]]
 `{counter:g4}`
 The {SmartHome} must provide an identification-based access control system.
+//---- 
 
 === G.5 High-level usage scenarios 
 
@@ -83,6 +69,7 @@ The {SmartHome} must provide an identification-based access control system.
 
 {emptysec}
 
+[[stakeholders]]
 === G.7 Stakeholders and requirements sources
 
 Here is a non-exhaustive list of the stakeholders.
@@ -93,9 +80,9 @@ Here is a non-exhaustive list of the stakeholders.
 |===
 | Stakeholder | Category | Comment 
 //----------------------------------------------
-| [[Owner]]Owner | User | Owner of the {system} (not necesseraly inhabiting it).
+| [[Owner]]Owner | User | Owner of the {system} (not necessarily inhabiting it).
 | [[Inhabitants]]Inhabitants | User | People leaving regularly in the {system}.
-| Medical staff | Medical department | Person in charge of the health of the <<inhabitants,inhabitants>>.
+| [[meds]]Medical staff | Medical department | Person in charge of the health of the <<inhabitants,inhabitants>>.
 |=== 
 //----------------------------------------------
 
@@ -109,14 +96,14 @@ Here is a non-exhaustive list of the stakeholders.
 |===
 //----------------------------------------------
 
-.Back matter
-[TIP]
-====
-// Title (whether or not on a separate title page).
-// Date of current publication and revision history.
-// Table of contents and any other appropriate tables, such as a table of illustrations. (But not the
-// glossary, which is part of the contents, as section E.1.)
-// Copyright notice, distribution information, restrictions on distribution.
-// Approval information. 
-TBD list:: <<p1-persons>>.
-====
+// .Back matter
+// [TIP]
+// ====
+// // Title (whether or not on a separate title page).
+// // Date of current publication and revision history.
+// // Table of contents and any other appropriate tables, such as a table of illustrations. (But not the
+// // glossary, which is part of the contents, as section E.1.)
+// // Copyright notice, distribution information, restrictions on distribution.
+// // Approval information. 
+// // TBD list:: <<ref>>.
+// ====
