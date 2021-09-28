@@ -69,7 +69,7 @@ The {SmartHome} must provide an identification-based access control system.
 
 {emptysec}
 
-[[stakeholders]]
+[[g7]]
 === G.7 Stakeholders and requirements sources
 
 Here is a non-exhaustive list of the stakeholders.
@@ -80,9 +80,9 @@ Here is a non-exhaustive list of the stakeholders.
 |===
 | Stakeholder | Category | Comment 
 //----------------------------------------------
-| [[Owner]]Owner | User | Owner of the {system} (not necessarily inhabiting it).
-| [[Inhabitants]]Inhabitants | User | People leaving regularly in the {system}.
-| [[meds]]Medical staff | Medical department | Person in charge of the health of the <<inhabitants,inhabitants>>.
+| [[g7-Owner]]Owner | User | Owner of the {system} (not necessarily inhabiting it).
+| [[g7-Inhabitants]]Inhabitants | User | People leaving regularly in the {system}.
+| [[g7-meds]]Medical staff | Medical department | Person in charge of the health of the <<g7-Inhabitants,inhabitants>>.
 |=== 
 //----------------------------------------------
 
