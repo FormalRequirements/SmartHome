@@ -35,5 +35,5 @@ endif::[]
 :toc: macro
 
 // Requirements
-:smartHome: <<smartHome,Smart Home>>
+:smartHome: <<e1-smartHome,Smart Home>>
 :system: {smartHome}

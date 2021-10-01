@@ -35,12 +35,17 @@ For stakeholders definitions, see <<g7>>.
 [[e1-terms]]
 ==== `{counter:e1}` Terms
 
-[[e-smartHome]]
-{smartHome}:: The system under development: a home featuring a broad range of automated services to make it, e.g., more convenient, safer, or less costly to live in.
+Here is a list of terms' definitions in alphabetical order:
+
+
+Inhabitants:: see <<g7-Inhabitants,here>>
+Medical staff:: see <<g7-meds,here>>
+Owner:: see <<g7-Owner,here>>
+[[e1-smartHome]]{smartHome}:: The system under development: a home featuring a broad range of automated services to make it, e.g., more convenient, safer, or less costly to live in.
 
 ==== `{counter:e1}` Icons
 
-Here is the list of significations for the icons used when tracing the corresponding artifacts:
+Here is the list of significations for the icons used when tracing the implementation artifacts:
 
 //----------------------------------------------
 .Icons signification
