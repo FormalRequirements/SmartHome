@@ -29,7 +29,7 @@ toc::[]
 // Approval information. 
 ====
 
-=== G.1 Overall context and goals
+=== G.1 Context and overall objective
 
 {emptysec}
 

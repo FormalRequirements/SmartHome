@@ -1,10 +1,11 @@
 //--------------------------- Glossary & Definitions
 // URLS
-:companionURL: https://formalrequirements.github.io/requirements-handbook-companion
-:HandbookPDF: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-:companionGit: https://github.com/FormalRequirements/requirements-handbook
-:Roborace: https://formalrequirements.github.io/roboraceRequirements/[Roborace]
-:requiremmentsURL: https://formalrequirements.github.io/companionRequirements
+// :companionURL: https://formalrequirements.github.io/requirements-handbook-companion
+// :HandbookPDF: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
+
+:github-repo: git@github.com:FormalRequirements/SmartHome.git
+:github-io: https://FormalRequirements.github.io/SmartHome
+
 
 // ICONS
 :check: icon:check-circle[]
