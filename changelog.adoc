@@ -6,7 +6,8 @@
 | Version | Date | Comment 
 //----------------------------------------------
 | 1.0           | 2021-09-23 | Initial draft by {jmb}
-| {version}     | 2021-09-27 | Stackeholders' initial definition by {jmb}
+| 1.1     | 2021-09-27 | Stackeholders' initial definition by {jmb}
+| {version}     | 2021-10-01 | Update new sections' title by {jmb}
 | _{version}_   | _{localdate}_ | _Current PDF version, by {jmb}_
 |=== 
 //----------------------------------------------
