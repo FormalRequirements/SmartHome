@@ -5,7 +5,7 @@
 
 :github-repo: git@github.com:FormalRequirements/SmartHome.git
 :github-io: https://FormalRequirements.github.io/SmartHome
-
+:companionGit: https://github.com/FormalRequirements
 
 // ICONS
 :check: icon:check-circle[]
@@ -19,8 +19,9 @@
 ifdef::pdf-backend[]
 :method: PEGS
 endif::[]
-:smartHome: <<smartHome,Smart Home>>
 :inhabitants: <<inhabitants,Inhabitants>>
+:miburl: http://mi.iut-blagnac.fr/
+:IUTBlagnac: http://www.iut-blagnac.fr/[IUT de Blagnac]
 //:: <<>>
 
 // PERSONS ENTRIES
@@ -38,3 +39,4 @@ endif::[]
 // Requirements
 :smartHome: <<e1-smartHome,Smart Home>>
 :system: {smartHome}
+:mib: <<e1-mib,MIB>>

@@ -1,6 +1,6 @@
 :title: SmartHome Requirements
 :project: Project
-:version: 1.2
+:version: 1.3
 :author: J.-M. Bruel
 :email: bruel@irit.fr
 :organization: IRIT/CNRS - University of Toulouse, France
@@ -27,7 +27,7 @@ include::definitions.adoc[]
 [NOTE]
 ====
 This repository constitutes the requirements of the link:initialReqs.pdf[Smart Home Challenge Problem].
-It follows the method presented in the {HandbookPDF}[Handbook of requirements and business analysis].
+It follows the method presented in the _Handbook of requirements and business analysis_.
 It uses the Asciidoc template available {companionGit}/blob/issue-14-Write_an_Asciidoc_template_for_PEGS/templates/asciidoc/book.adoc[here].
 ====
 

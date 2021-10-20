@@ -10,6 +10,7 @@
 // {missing} [Corresponding Artifact]
 //---- 
 //------------------------------------
+:imagesdir: images
 
 ifndef::part[]
 :part:
@@ -31,7 +32,103 @@ toc::[]
 
 === G.1 Context and overall objective
 
-{emptysec}
+This document aims at describing the expected features and characteristics of a {smartHome}.
+
+In order to be more illustrative, we will use the concrete example of an existing instance: the {mib}. 
+
+.Blagnac {smartHome}
+image::mib.png[MIB,width=90%,scaledwidth=90%]
+
+The {mib} is an apartment allowing the assistance of dependent persons at their home.
+The initial specification for this system is available on this {miburl}[site].
+
+[NOTE]
+====
+. We are only interested by the smart aspects of the house, not its architectural characteristics.
+. Un http://intercax.com/2015/09/21/smart-home-iot-1/[blog récent] a également utilisé cette étude de cas, vous y trouverez des informations complémentaires : .
+====
+
+
+// Source Nicolas Hili
+
+The variety of devices the consumer can access allow him or her to do a set of tasks including:
+
+- Monitoring the energy consumption globally or for a specific electrical devices;
+- Activating electrical actuators (adjusting a light bulb intensity, automating the opening of shutters according to the time of the day, ...);
+- Monitoring information collected via a set of sensors, including temperature sensors, luminosity sensors, presence detectors, etc.
+
+The central theme of this project is in-home support: providing individuals who require nursing care, elderly people, or disabled people with personalized and reliable care services they need in order to live almost autonomously in their domestic accommodation, while feeling secure. 
+Sense of security is continuously provided by an architecture designed for them, potentially requiring human assistance. Designing domestic accommodation that offers security both in the physiological and the logistical levels is the challenge of this use case.
+
+==== Security
+
+As any other home, {smartHome}s must provide a certain level of protection against intruders, burglars. This level has to be enforced as {smartHome}s may be not only vulnerable to physical accesses, but are also open to cyber attacks. Security breaches or a low level of identification may allow hackers to intrude or to steal personal digital information about inhabitants. However, compared to classical homes, {smartHome}s can leverage of smart devices in order to prevent or put a stop to undesirable intrusions (alarm, automatic call to the police station) while facilitating access to relevant and trustworthy authorities, such as firemen, policemen, and ambulances. Such authorities can be automatically alerted in the case of unexpected situation involving specific conditions of the inhabitants (e.g, when an elderly falls) with the help of smart sensors (e.g., fall detector).
+Another important concern of {smartHome}s is the use and access to personal information by the different smart devices embedded into the house. Smart devices can come from different companies that require specific information, possibly collected in real-time and sent to remote third-party servers via Internet. Prevention measures must be therefore taken in order to ensure the authentication and access to personal information by trustworthy applications only, the protection of the information when stored on private hard drives or collected on external networks. Such mechanisms include data encryption, open API, etc.
+
+==== Accommodations to physical and mental conditions of individuals
+
+{smartHome}s can accommodate specific conditions of the inhabitants and adapt itself in response to them. Examples include accommodating the height of a kitchen cabinet in order to facilitate its use, access (e.g., to the upper drawers), and maintenance (e.g., dust the top of the shelves). In addition, inhabitants suffering from mental conditions may need assistance in order to accomplish day-to-day tasks. For example, LEDs inlayed in the floor can help individuals suffering from the Alzheimer's disease to remember the path of the bathroom the morning when getting out of the bed.
+In addition to accommodating physical and mental conditions, {smartHome}s can also accommodate inhabitants’ preferences. Control interfaces provided to them or learning algorithms to learn from their habits can help accommodate inhabitants’ preferences. For example, inhabitants can use a control interface to set the range of temperature comfortable for the inhabitants. Furthermore, learning algorithms can automatically adapt this temperature according to the day of the week (providing different ranges for weekdays and week-end), the schedule of the inhabitants, ...
+
+==== Environment and economy
+An important aspect of {smartHome}s is to provide mechanisms for reducing energy consumption. It can be done for different purposes. Economically first, but also to meet local regulations in terms of energy consumption. Using the above example, {smartHome}s can reduce the temperature range according to time slots, or whenever the inhabitants leave the house. Temperature can be slightly decreased overnight and increased again in the morning. Overnight, most of the smart devices can also be put in sleeping mode and reactivated the morning. Information flux over Internet can also be reduced to specific time slots in order to reduce the consumption.
+In addition to reducing the energy consumption, {smartHome}s must play a central home in producing green energy. This can be done by smart solar panels (e.g., solar sun flowers that can follow the position of the sun), geothermal energy converter, ...
+
+==== Experimental platform
+A {smartHome} experimental platform is located in Toulouse, on the campus of the {IUTBlagnac}, which is a subdivision of the University of Toulouse II. This platform comes from an educational project initiated by the IUT of Blagnac, with strong collaborations with the faculties of psychology and sociology of the University of Toulouse II. It aims at supporting both academic and professional trainings, by gathering in the same place several proficiencies, expertises, and synergies around a delicate problematic of in-home support.
+
+The role of the platform is threefold:
+
+Precursor:: technological surveillance site providing scientific and sociological research groups and laboratories with a complete experimental platform (design, realisation, tests, experimentations and validation);
+Pioneering:: pioneering site for presentation, discovery, exposition, and demonstration for industrial and service provider companies. Technological window showing the landscape of expertises of companies in transversal domains ranging from property business to equipment manufacturers;
+Educative:: site ideally equipped with experimental and pioneering products, the {smartHome} experimental platform offers for local universities and faculties an exceptional area for undergraduate and graduate students.
+
+==== Initial list of requirements
+
+A list of requirements for the {smartHome} use case is provided below. The list is not exhaustive and it is not mandatory to satisfy all of the suggested requirements. Additional requirements can be defined as well. Each requirement below is numbered so it can be easily referred.
+
+[align="center",cols="1,1,4",options="header",width=100]
+|======================
+| ID  | Category | Description
+| SH_SEC_010
+| Security
+| The {smartHome} must prevent unauthorized physical intrusion.
+| SH_SEC_020
+| | The {smartHome} must prevent computer intrusion.
+| SH_SEC_030
+| | The {smartHome} must provide an identification-based access control system.
+| SH_SEC_040
+| | The {smartHome} must call the police station in case of burglary or any other unauthorized intrusion.
+| SH_SEC_050
+| | The {smartHome} must be able to detect smoke and to call the fire station in case of suspicion of fire.
+| SH_SEC_060
+| | The {smartHome} must be able to detect accidental falls and to call an ambulance.
+| SH_SEC_070
+| | The {smartHome} must provide authorized access for emergency services (firemen, hospital service, etc.).
+| SH_ACO_010
+| Accommodation
+| The {smartHome} must accommodate physical and mental conditions of the inhabitants.
+| SH_ACO_020
+| | The {smartHome} must accommodate specific preferences entered by the inhabitants.
+| SH_ACO_030
+| | The {smartHome} must learn from the behaviour of inhabitants.
+| SH_ACO_040
+| | The {smartHome} must assist the inhabitants with the everyday tasks regardless of their disabilities.
+| SH_ACO_050
+| | The {smartHome} must be monitorable via a central interface located in the main room.
+| SH_ACO_060
+| | The {smartHome} must support the connection of smart devices of the inhabitants.
+| SH_ACO_070
+| | The {smartHome} must have a bed that accommodates to the disability of the inhabitants.
+| SH_ECO_010
+| Economy
+| The {smartHome} must save energy.
+| SH_ECO_020
+| | The {smartHome} annual consumption should be less than local regulations.
+| SH_ECO_030
+| | The {smartHome} must prioritize self-produced energy.
+|======================
+
 
 === G.2 Current situation
 
@@ -46,19 +143,19 @@ toc::[]
 //---- Requirement
 [[g4-phys-intrusion]]
 `{counter:g4}`
-The {SmartHome} must support prevention and detection of unauthorized physical intrusion.
+The {smartHome} must support the prevention and detection of unauthorized physical intrusion.
 //---- 
 
 //---- Requirement
 [[g4-comp-intrusion]]
 `{counter:g4}`
-The {SmartHome} must support prevention and detection of unauthorized computer intrusion.
+The {smartHome} must support the prevention and detection of unauthorized computer intrusion.
 //---- 
 
 //---- Requirement
 [[g4-id-access]]
 `{counter:g4}`
-The {SmartHome} must provide an identification-based access control system.
+The {smartHome} must provide an identification-based access control system.
 //---- 
 
 === G.5 High-level usage scenarios 

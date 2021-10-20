@@ -39,6 +39,8 @@ Here is a list of terms' definitions in alphabetical order:
 
 [[e1-smartHome]]{smartHome}:: The system under development: a home featuring a broad range of automated services to make it, e.g., more convenient, safer, or less costly to live in.
 
+[[e1-mib]]{mib}:: The experimental {smartHome} of the {IUTblagnac}. See {miburl}.
+
 ==== `{counter:e1}` Icons
 
 Here is the list of significations for the icons used when tracing the implementation artifacts:
