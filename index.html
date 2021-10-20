@@ -446,7 +446,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">J.-M. Bruel</span><br>
 <span id="email" class="email"><a href="mailto:bruel@irit.fr">bruel@irit.fr</a></span><br>
-<span id="revdate">1.1 -- 2021-10-01</span>
+<span id="revdate">1.3 -- 2021-10-20</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -508,8 +508,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="content">
 <div class="paragraph">
 <p>This repository constitutes the requirements of the <a href="initialReqs.pdf">Smart Home Challenge Problem</a>.
-It follows the method presented in the {HandbookPDF}[Handbook of requirements and business analysis].
-It uses the Asciidoc template available {companionGit}/blob/issue-14-Write_an_Asciidoc_template_for_PEGS/templates/asciidoc/book.adoc[here].</p>
+It follows the method presented in the <em>Handbook of requirements and business analysis</em>.
+It uses the Asciidoc template available <a href="https://github.com/FormalRequirements/blob/issue-14-Write_an_Asciidoc_template_for_PEGS/templates/asciidoc/book.adoc">here</a>.</p>
 </div>
 </td>
 </tr>
@@ -543,8 +543,18 @@ It uses the Asciidoc template available {companionGit}/blob/issue-14-Write_an_As
 <td class="tableblock halign-left valign-top"><p class="tableblock">Stackeholders' initial definition by <a href="https://jmbruel.netlify.app">J.-M. Bruel</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>1.1</em></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>2021-10-01</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2021-10-01</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Update new sections' title by <a href="https://jmbruel.netlify.app">J.-M. Bruel</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2021-10-19</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Typos and context update, by <a href="https://jmbruel.netlify.app">J.-M. Bruel</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>1.3</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>2021-10-20</em></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>Current PDF version, by <a href="https://jmbruel.netlify.app">J.-M. Bruel</a></em></p></td>
 </tr>
 </tbody>
@@ -571,7 +581,214 @@ It uses the Asciidoc template available {companionGit}/blob/issue-14-Write_an_As
 <div class="sect2">
 <h3 id="_g_1_context_and_overall_objective">G.1 Context and overall objective</h3>
 <div class="paragraph">
-<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+<p>This document aims at describing the expected features and characteristics of a <a href="#e1-smartHome">Smart Home</a>.</p>
+</div>
+<div class="paragraph">
+<p>In order to be more illustrative, we will use the concrete example of an existing instance: the <a href="#e1-mib">MIB</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/mib.png" alt="MIB" width="90%">
+</div>
+<div class="title">Figure 1. Blagnac <a href="#e1-smartHome">Smart Home</a></div>
+</div>
+<div class="paragraph">
+<p>The <a href="#e1-mib">MIB</a> is an apartment allowing the assistance of dependent persons at their home.
+The initial specification for this system is available on this <a href="http://mi.iut-blagnac.fr/">site</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>We are only interested by the smart aspects of the house, not its architectural characteristics.</p>
+</li>
+<li>
+<p>Un <a href="http://intercax.com/2015/09/21/smart-home-iot-1/">blog récent</a> a également utilisé cette étude de cas, vous y trouverez des informations complémentaires : .</p>
+</li>
+</ol>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The variety of devices the consumer can access allow him or her to do a set of tasks including:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Monitoring the energy consumption globally or for a specific electrical devices;</p>
+</li>
+<li>
+<p>Activating electrical actuators (adjusting a light bulb intensity, automating the opening of shutters according to the time of the day, &#8230;&#8203;);</p>
+</li>
+<li>
+<p>Monitoring information collected via a set of sensors, including temperature sensors, luminosity sensors, presence detectors, etc.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The central theme of this project is in-home support: providing individuals who require nursing care, elderly people, or disabled people with personalized and reliable care services they need in order to live almost autonomously in their domestic accommodation, while feeling secure.
+Sense of security is continuously provided by an architecture designed for them, potentially requiring human assistance. Designing domestic accommodation that offers security both in the physiological and the logistical levels is the challenge of this use case.</p>
+</div>
+<div class="sect3">
+<h4 id="_security">Security</h4>
+<div class="paragraph">
+<p>As any other home, <a href="#e1-smartHome">Smart Home</a>s must provide a certain level of protection against intruders, burglars. This level has to be enforced as <a href="#e1-smartHome">Smart Home</a>s may be not only vulnerable to physical accesses, but are also open to cyber attacks. Security breaches or a low level of identification may allow hackers to intrude or to steal personal digital information about inhabitants. However, compared to classical homes, <a href="#e1-smartHome">Smart Home</a>s can leverage of smart devices in order to prevent or put a stop to undesirable intrusions (alarm, automatic call to the police station) while facilitating access to relevant and trustworthy authorities, such as firemen, policemen, and ambulances. Such authorities can be automatically alerted in the case of unexpected situation involving specific conditions of the inhabitants (e.g, when an elderly falls) with the help of smart sensors (e.g., fall detector).
+Another important concern of <a href="#e1-smartHome">Smart Home</a>s is the use and access to personal information by the different smart devices embedded into the house. Smart devices can come from different companies that require specific information, possibly collected in real-time and sent to remote third-party servers via Internet. Prevention measures must be therefore taken in order to ensure the authentication and access to personal information by trustworthy applications only, the protection of the information when stored on private hard drives or collected on external networks. Such mechanisms include data encryption, open API, etc.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_accommodations_to_physical_and_mental_conditions_of_individuals">Accommodations to physical and mental conditions of individuals</h4>
+<div class="paragraph">
+<p><a href="#e1-smartHome">Smart Home</a>s can accommodate specific conditions of the inhabitants and adapt itself in response to them. Examples include accommodating the height of a kitchen cabinet in order to facilitate its use, access (e.g., to the upper drawers), and maintenance (e.g., dust the top of the shelves). In addition, inhabitants suffering from mental conditions may need assistance in order to accomplish day-to-day tasks. For example, LEDs inlayed in the floor can help individuals suffering from the Alzheimer&#8217;s disease to remember the path of the bathroom the morning when getting out of the bed.
+In addition to accommodating physical and mental conditions, <a href="#e1-smartHome">Smart Home</a>s can also accommodate inhabitants’ preferences. Control interfaces provided to them or learning algorithms to learn from their habits can help accommodate inhabitants’ preferences. For example, inhabitants can use a control interface to set the range of temperature comfortable for the inhabitants. Furthermore, learning algorithms can automatically adapt this temperature according to the day of the week (providing different ranges for weekdays and week-end), the schedule of the inhabitants, &#8230;&#8203;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_environment_and_economy">Environment and economy</h4>
+<div class="paragraph">
+<p>An important aspect of <a href="#e1-smartHome">Smart Home</a>s is to provide mechanisms for reducing energy consumption. It can be done for different purposes. Economically first, but also to meet local regulations in terms of energy consumption. Using the above example, <a href="#e1-smartHome">Smart Home</a>s can reduce the temperature range according to time slots, or whenever the inhabitants leave the house. Temperature can be slightly decreased overnight and increased again in the morning. Overnight, most of the smart devices can also be put in sleeping mode and reactivated the morning. Information flux over Internet can also be reduced to specific time slots in order to reduce the consumption.
+In addition to reducing the energy consumption, <a href="#e1-smartHome">Smart Home</a>s must play a central home in producing green energy. This can be done by smart solar panels (e.g., solar sun flowers that can follow the position of the sun), geothermal energy converter, &#8230;&#8203;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_experimental_platform">Experimental platform</h4>
+<div class="paragraph">
+<p>A <a href="#e1-smartHome">Smart Home</a> experimental platform is located in Toulouse, on the campus of the <a href="http://www.iut-blagnac.fr/">IUT de Blagnac</a>, which is a subdivision of the University of Toulouse II. This platform comes from an educational project initiated by the IUT of Blagnac, with strong collaborations with the faculties of psychology and sociology of the University of Toulouse II. It aims at supporting both academic and professional trainings, by gathering in the same place several proficiencies, expertises, and synergies around a delicate problematic of in-home support.</p>
+</div>
+<div class="paragraph">
+<p>The role of the platform is threefold:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Precursor</dt>
+<dd>
+<p>technological surveillance site providing scientific and sociological research groups and laboratories with a complete experimental platform (design, realisation, tests, experimentations and validation);</p>
+</dd>
+<dt class="hdlist1">Pioneering</dt>
+<dd>
+<p>pioneering site for presentation, discovery, exposition, and demonstration for industrial and service provider companies. Technological window showing the landscape of expertises of companies in transversal domains ranging from property business to equipment manufacturers;</p>
+</dd>
+<dt class="hdlist1">Educative</dt>
+<dd>
+<p>site ideally equipped with experimental and pioneering products, the <a href="#e1-smartHome">Smart Home</a> experimental platform offers for local universities and faculties an exceptional area for undergraduate and graduate students.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_initial_list_of_requirements">Initial list of requirements</h4>
+<div class="paragraph">
+<p>A list of requirements for the <a href="#e1-smartHome">Smart Home</a> use case is provided below. The list is not exhaustive and it is not mandatory to satisfy all of the suggested requirements. Additional requirements can be defined as well. Each requirement below is numbered so it can be easily referred.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 66.6668%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">ID</th>
+<th class="tableblock halign-left valign-top">Category</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_SEC_010</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Security</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> must prevent unauthorized physical intrusion.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_SEC_020</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> must prevent computer intrusion.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_SEC_030</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> must provide an identification-based access control system.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_SEC_040</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> must call the police station in case of burglary or any other unauthorized intrusion.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_SEC_050</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> must be able to detect smoke and to call the fire station in case of suspicion of fire.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_SEC_060</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> must be able to detect accidental falls and to call an ambulance.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_SEC_070</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> must provide authorized access for emergency services (firemen, hospital service, etc.).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_ACO_010</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Accommodation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> must accommodate physical and mental conditions of the inhabitants.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_ACO_020</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> must accommodate specific preferences entered by the inhabitants.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_ACO_030</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> must learn from the behaviour of inhabitants.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_ACO_040</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> must assist the inhabitants with the everyday tasks regardless of their disabilities.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_ACO_050</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> must be monitorable via a central interface located in the main room.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_ACO_060</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> must support the connection of smart devices of the inhabitants.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_ACO_070</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> must have a bed that accommodates to the disability of the inhabitants.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_ECO_010</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Economy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> must save energy.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_ECO_020</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> annual consumption should be less than local regulations.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SH_ECO_030</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="#e1-smartHome">Smart Home</a> must prioritize self-produced energy.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect2">
@@ -590,11 +807,11 @@ It uses the Asciidoc template available {companionGit}/blob/issue-14-Write_an_As
 <h3 id="_g_4_functionality_overview">G.4 Functionality overview</h3>
 <div id="g4-phys-intrusion" class="paragraph">
 <p><code>1</code>
-The <a href="#e1-smartHome">Smart Home</a> must support prevention and detection of unauthorized physical intrusion.</p>
+The <a href="#e1-smartHome">Smart Home</a> must support the prevention and detection of unauthorized physical intrusion.</p>
 </div>
 <div id="g4-comp-intrusion" class="paragraph">
 <p><code>2</code>
-The <a href="#e1-smartHome">Smart Home</a> must support prevention and detection of unauthorized computer intrusion.</p>
+The <a href="#e1-smartHome">Smart Home</a> must support the prevention and detection of unauthorized computer intrusion.</p>
 </div>
 <div id="g4-id-access" class="paragraph">
 <p><code>3</code>
@@ -708,6 +925,10 @@ For stakeholders definitions, see <a href="#g7">G.7 Stakeholders and requirement
 <dt class="hdlist1"><a id="e1-smartHome"></a><a href="#e1-smartHome">Smart Home</a></dt>
 <dd>
 <p>The system under development: a home featuring a broad range of automated services to make it, e.g., more convenient, safer, or less costly to live in.</p>
+</dd>
+<dt class="hdlist1"><a id="e1-mib"></a><a href="#e1-mib">MIB</a></dt>
+<dd>
+<p>The experimental <a href="#e1-smartHome">Smart Home</a> of the <a href="http://www.iut-blagnac.fr/">IUT de Blagnac</a>. See <a href="http://mi.iut-blagnac.fr/" class="bare">http://mi.iut-blagnac.fr/</a>.</p>
 </dd>
 </dl>
 </div>
@@ -970,7 +1191,7 @@ Ipse Lorem</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-10-01 12:37:43 +0200
+Last updated 2021-10-19 19:19:41 +0200
 </div>
 </div>
 </body>
